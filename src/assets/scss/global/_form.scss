@@ -1,0 +1,44 @@
+// BUTTON STYLE
+
+.button {
+    border: 1px solid var(--button-border-color);
+    background-color: var(--button-background-color);
+    color: var(--button-color);
+    font-size: var(--button-font-size);
+    height: auto;
+    line-height: var(--button-lineheight);
+    padding: var(--button-spacing);
+    @include transition(all 0.3s linear);
+    box-shadow: 6px 6px 0 var(--button-border-color);
+    display: inline-block;
+
+    @include tablet {
+        box-shadow: none;
+    }
+
+    &.button-with-icon {
+        padding: var(--button-with-icon-spacing);
+        @include display-flex(flex);
+
+        svg {
+            margin-right: 12px;
+        }
+    }
+
+    &.button-large {
+        padding: var(--button-large-spacing);
+        font-size: var(--button-large-font-size);
+
+        @include tablet {
+            font-size: 14px;
+            padding: 4px 18px;
+        }
+    }
+
+    &:hover {
+        color: var(--button-hover-color);
+        border-color: var(--button-hover-border-color);
+        background-color: var(--button-hover-background-color);
+        box-shadow: none;
+    }
+}

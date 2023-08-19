@@ -1,0 +1,281 @@
+.hero-banner {
+    background-color: var(--light-bg-color);
+    border-bottom: 1px solid var(--black-color);
+    position: relative;
+    overflow: hidden;
+
+    @include tablet {
+        padding-bottom: 146px;
+        border-bottom: 0px;
+    }
+
+    .tagline-swiper {
+        @include tablet {
+            @include display-flex(flex);
+            border-bottom: 1px solid var(--black-color);
+            position: relative;
+            z-index: 1;
+            background-color: var(--white-color);
+        }
+    }
+
+    &:after {
+        position: absolute;
+        content: "";
+        top: -85%;
+        left: 50%;
+        width: 979px;
+        height: 979px;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='978.805' height='978.805' viewBox='0.045 -0.022 978.805 978.805'%3E%3Cpath d='M0 365.9a366 366 0 1 1 0 .1z' fill-rule='evenodd' fill='url(&quot;%23a&quot;)' transform='rotate(64 328.959 526.444)' data-name='Ellipse 112'/%3E%3Cdefs%3E%3CradialGradient fx='.3' fy='.284' cx='.3' cy='.284' fr='0' r='.826' gradientTransform='matrix(.71353 .70062 -.40102 .40841 .2 -.042)' id='a'%3E%3Cstop stop-color='%233c92ff' offset='0'/%3E%3Cstop stop-color='rgba(210,152,176,0.43137254901960786 )' offset='1'/%3E%3C/radialGradient%3E%3C/defs%3E%3C/svg%3E");
+        opacity: 1;
+        filter: blur(50px);
+        transform: translateX(-50%);
+
+        @include medium {
+            width: 527px;
+            height: 527px;
+            top: -50%;
+        }
+
+        @include mobile {
+            top: -25%;
+        }
+    }
+
+    .col {
+        +.col {
+            position: relative;
+
+            @include tablet {
+                margin-top: 55px;
+            }
+
+            &:before {
+                height: 300px;
+                width: 1px;
+                position: absolute;
+                content: "";
+                background-color: var(--black-color);
+                left: 20px;
+                top: 0;
+
+                @include tablet {
+                    left: 50%;
+                    transform: translateX(-50%);
+                    height: 51px;
+                    top: -37px;
+                    z-index: 1;
+                }
+
+            }
+
+            &:after {
+                height: 128px;
+                width: 1px;
+                position: absolute;
+                content: "";
+                background-color: var(--black-color);
+                left: 20px;
+                top: auto;
+                bottom: 0;
+
+                @include tablet {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .left-block {
+        position: relative;
+        padding-top: 120px;
+        padding-bottom: 28px;
+
+        @include tablet {
+            padding-top: 160px;
+            padding-bottom: 0px;
+        }
+
+        &:before {
+            position: absolute;
+            content: "";
+            top: 83px;
+            left: -176.904541015625px;
+            width: 979px;
+            height: 979px;
+            background: transparent radial-gradient(closest-side at 30% 28%, #3C92FF 0%, #211E1B 100%) 0% 0% no-repeat padding-box;
+            mix-blend-mode: lighten;
+            opacity: 1;
+            filter: blur(50px);
+
+            @include tablet {
+                width: 459px;
+                height: 385px;
+                left: 0px;
+            }
+        }
+
+        &:after {
+            @include tablet {
+                height: 128px;
+                width: 1px;
+                position: absolute;
+                content: "";
+                background-color: var(--black-color);
+                left: 50%;
+                top: 0;
+                transform: translateX(-50%);
+                z-index: 1;
+            }
+        }
+
+        .heading {
+            font-family: var(--seconday-font);
+            letter-spacing: 1.25px;
+            font-size: 78px;
+            line-height: 88px;
+            font-weight: var(--font-light);
+            margin-bottom: 36px;
+
+            @include tablet {
+                font-size: 41px;
+                line-height: 46px;
+                margin-bottom: 0px;
+            }
+
+            strong {
+                font-weight: var(--font-bold);
+            }
+        }
+
+        .social-block {
+            @include tablet {
+                display: none;
+            }
+        }
+    }
+
+    .right-block {
+        position: relative;
+        height: 100%;
+        @include display-flex(flex);
+        @include flex-direction(column);
+        @include justify-content(flex-end);
+        padding-bottom: 40px;
+
+        .content-block {
+            position: relative;
+            z-index: 1;
+
+            @include mobile {
+                z-index: 9;
+            }
+
+            &:before {
+                @include mobile {
+                    position: absolute;
+                    content: "";
+                    top: auto;
+                    right: -20px;
+                    bottom: -71px;
+                    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='188.663' height='172.273' viewBox='1258.845 719.052 188.663 172.273'%3E%3Cg data-name='Group 678'%3E%3Cg data-name='Path 1845'%3E%3Cpath d='m1418.1 759.553-56.048-24.955-4.749 1.823-16.392 36.816-36.816-16.39-4.75 1.822-24.954 56.049 1.823 4.749 92.87 41.348 6.573 2.926 2.925-6.573 41.342-92.866-1.823-4.75Zm-46.09 94.689-89.583-39.885 22.027-49.475 40.076 17.842.012-.027.028.012 17.843-40.075 49.474 22.028-39.877 89.58Z' fill='%23fffcf8' fill-rule='evenodd'/%3E%3Cpath d='m1418.1 759.553-56.048-24.955-4.749 1.823-16.392 36.816-36.816-16.39-4.75 1.822-24.954 56.049 1.823 4.749 92.87 41.348h0l6.573 2.926 2.925-6.573h0l41.342-92.866-1.823-4.75Zm-46.09 94.689-89.583-39.885 22.027-49.475 40.076 17.842.012-.027.028.012 17.843-40.075 49.474 22.028-39.877 89.58Z' stroke-linejoin='round' stroke-linecap='round' stroke='%23000' fill='transparent'/%3E%3C/g%3E%3Cg data-name='Path 1846'%3E%3Cpath d='m1356.557 779.547 6.573 2.926 7.526-16.904 16.905 7.526 2.926-6.573-20.192-8.988-4.748 1.822-8.99 20.191Z' fill='%23fffcf8' fill-rule='evenodd'/%3E%3Cpath d='m1356.557 779.547 6.573 2.926 7.526-16.904 16.905 7.526 2.926-6.573-20.192-8.988-4.748 1.822-8.99 20.191Z' stroke-linejoin='round' stroke-linecap='round' stroke='%23000' fill='transparent'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+                    width: 154px;
+                    height: 141px;
+                    background-repeat: no-repeat;
+                    background-size: auto 100%;
+                }
+            }
+        }
+
+        &:before {
+            position: absolute;
+            content: "";
+            top: 140px;
+            left: -83px;
+            width: 793px;
+            height: 664px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='792.582' height='663.8' viewBox='900.673 227.574 792.582 663.8'%3E%3Cg data-name='Component 32 – 2'%3E%3Cpath d='M0 279.4a356.962 279.5 0 1 1 0 .1z' fill-rule='evenodd' fill='url(&quot;%23a&quot;)' transform='rotate(171 815.944 456.452)' data-name='Ellipse 92'/%3E%3C/g%3E%3Cdefs%3E%3CradialGradient fx='.3' fy='.284' cx='.3' cy='.284' fr='0' r='.778' gradientTransform='matrix(.69468 .71932 -.41172 .39762 .209 -.045)' id='a'%3E%3Cstop stop-color='%231a7dff' offset='0'/%3E%3Cstop stop-color='rgba(201,232,255,0.5372549019607843 )' offset='1'/%3E%3C/radialGradient%3E%3C/defs%3E%3C/svg%3E");
+            opacity: 1;
+            filter: blur(50px);
+
+            @include tablet {
+                top: -50%;
+            }
+
+            @include mobile {
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='851.886' height='777.277' viewBox='0 0 851.886 777.277'%3E%3Cdefs%3E%3CradialGradient id='radial-gradient' cx='0.3' cy='0.284' r='0.778' gradientUnits='objectBoundingBox'%3E%3Cstop offset='0' stop-color='%231a7dff'/%3E%3Cstop offset='1' stop-color='%23c9e8ff' stop-opacity='0.537'/%3E%3C/radialGradient%3E%3C/defs%3E%3Cellipse id='Ellipse_92' data-name='Ellipse 92' cx='206.806' cy='161.928' rx='206.806' ry='161.928' transform='translate(655.534 516.221) rotate(171)' fill='url(%23radial-gradient)'/%3E%3C/svg%3E%0A");
+                width: 100%;
+                height: 385px;
+                background-position: center;
+                left: 50%;
+                transform: translateX(-50%);
+                top: auto;
+                bottom: -100px;
+            }
+        }
+
+        h6 {
+            font-size: 33px;
+            line-height: 37px;
+            letter-spacing: 0.53px;
+            margin-bottom: 5px;
+            font-weight: var(--font-light);
+            font-family: var(--primary-font);
+
+            @include tablet {
+                font-size: 17px;
+                line-height: 19px;
+            }
+        }
+
+        h2 {
+            font-size: 72px;
+            line-height: 77px;
+            letter-spacing: 2.22px;
+            font-family: var(--primary-font);
+            font-weight: var(--font-bold);
+            margin-bottom: 17px;
+
+            @include tablet {
+                font-size: 39px;
+                line-height: 41px;
+            }
+        }
+
+        span {
+            font-size: 28px;
+            line-height: 32px;
+            font-family: var(--seconday-font);
+            padding-left: 70px;
+
+            @include tablet {
+                font-size: 14px;
+                line-height: 16px;
+            }
+
+            svg {
+                @include tablet {
+                    width: 132px;
+                    height: 13px;
+                }
+            }
+        }
+
+        .button-block {
+            @include transform(translate(75px, -36px));
+
+            @include x-large {
+                @include transform(translate(0px, -36px));
+            }
+
+            @include medium {
+                transform: none;
+            }
+
+            @include tablet {
+                @include justify-content(center);
+                margin-top: 42px;
+            }
+        }
+    }
+}

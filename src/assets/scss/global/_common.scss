@@ -1,0 +1,103 @@
+/* ============ COMMON MIXIN CLASS ============ */
+
+.flex {
+    @include display-flex(flex);
+}
+
+.align-center {
+    @include align-item(center);
+}
+
+.align-start {
+    @include align-item(flex-start);
+}
+
+.align-end {
+    @include align-item(flex-end);
+}
+
+.align-self-start {
+    @include align-self(flex-start);
+}
+
+.justify-center {
+    @include justify-content(center);
+}
+
+.justify-right {
+    @include justify-content(flex-end);
+}
+
+.justify-left {
+    @include justify-content(flex-start);
+}
+
+.justify-space {
+    @include justify-content(space-between);
+}
+
+.flex-wrap {
+    @include flex-wrap(wrap);
+}
+
+.flex-no-wrap {
+    @include flex-wrap(nowrap);
+}
+
+.flex-direction {
+    @include flex-direction(column);
+}
+
+.flex-reverse {
+    @include flex-direction(row-reverse);
+}
+
+/* ============ COMMON CLASS ============ */
+
+.container {
+    max-width: 100%;
+    padding-left: 160px;
+    padding-right: 160px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include x-large {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    &.container-liquid {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+.position-relative {
+    position: relative;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.row {
+    margin: 0 -20px;
+
+    .col {
+        padding: 0 20px;
+    }
+}
+
+.hide-tablet {
+    @include tablet {
+        display: none;
+    }
+}
+
+.show-tablet {
+    display: none;
+
+    @include tablet {
+        display: block;
+    }
+}

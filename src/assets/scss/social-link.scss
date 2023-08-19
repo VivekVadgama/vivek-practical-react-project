@@ -1,0 +1,22 @@
+.social-block {
+    border: 1px solid var(--black-color);
+    display: inline-block;
+    padding: 10px 20px;
+    z-index: 1;
+    position: relative;
+
+    ul {
+        list-style: none;
+        @include display-flex(flex);
+
+        li {
+            +li {
+                margin-left: 28px;
+            }
+
+            a {
+                @include display-flex(flex);
+            }
+        }
+    }
+}

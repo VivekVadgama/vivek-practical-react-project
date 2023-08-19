@@ -1,0 +1,22 @@
+// Global File
+@import './global/root';
+@import './global/fonts';
+@import './global/grid';
+@import './global/mixin';
+@import './global/reset';
+@import './global/form';
+@import './global/common';
+
+@import '../scss/social-link';
+
+// Header File
+@import '../scss/header';
+
+// Footer File
+@import '../scss/footer';
+
+// Homepage File
+@import '../scss/home';
+
+// Hero Banner File
+@import '../scss/hero-banner';

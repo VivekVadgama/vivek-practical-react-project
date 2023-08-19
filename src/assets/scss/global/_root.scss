@@ -1,0 +1,52 @@
+:root {
+
+    // BODY
+    --body-font: 16px;
+    --body-font-mobile: 14px;
+    --body-line-height: 1.4;
+    --body-background: #FFFFFF;
+    --body-color: #000000;
+
+    // FONT
+    --primary-font: 'Space Grotesk';
+    --seconday-font: 'Martel Sans';
+
+    --font-light: 300;
+    --font-normal: 400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-bold: bold;
+    --font-x-bold: 900;
+
+    // COLOR
+    --primary-color: #0002FF;
+    --black-color: #000000;
+    --white-color: #ffffff;
+    --border-color: #000000;
+    --link-color: #000000;
+    --link-hover-color: #0002FF;
+
+    // CONTAINER
+    --container-width: 1400px;
+    --container-small: 1200px;
+
+    // BUTTON
+    --button-border-color: #000000;
+    --button-background-color: #ffffff;
+    --button-color: #000000;
+    --button-spacing: 13px;
+    --button-font-size: 16px;
+    --button-lineheight: 18px;
+
+    --button-hover-color: #000000;
+    --button-hover-border-color: #000000;
+    --button-hover-background-color: #ffffff;
+
+    --button-large-spacing: 19px 54px;
+    --button-large-font-size: 24px;
+
+    --button-with-icon-spacing: 11px 15px;
+
+    // COMMON BACKGROUND COLOR
+    --light-bg-color: #FFFCF8;
+}
